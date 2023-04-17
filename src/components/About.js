@@ -6,9 +6,15 @@ export default function About(props) {
     //     backgroundColor: 'white'
     // })
     let myStyle = {
-        color: props.mode === "dark" ? "white" : "black",
-        backgroundColor: props.mode === "dark" ? "black" : "white"
+        color: props.mode === "dark" ? "white" : "#042743",
+        backgroundColor: props.mode === "dark" ? "rgb(36 74 104)" : "white",
     }
+    // let myStyle = {
+    //     color: props.mode === "dark" ? "white" : "#042743",
+    //     backgroundColor: props.mode === "dark" ? "#042743" : "white",
+    //     border: '2px solid',
+    //     borderColor: props.mode === "dark" ? "white" : "#042743",
+    // }
     return (
         <div className="container" style={myStyle}>
             <h1 className="my-3">About Us</h1>
